@@ -1,0 +1,33 @@
+Card 1: Hanzi → Pinyin + English + Audio
+
+Front: 你好
+
+Back: nǐ hǎo
+hello
+[Sound]
+
+Front Template:
+<div class="card hanzi-card">
+    <div class="prompt">Write the pronunciation and meaning:</div>
+    <div class="main-hanzi">{{Hanzi}}</div>
+</div>
+
+
+Back Template:
+<div class="card hanzi-card">
+    <div class="main-hanzi">{{Hanzi}}</div>
+    
+    <div class="pinyin-section">
+        <div class="pinyin-label">Pronunciation</div>
+        <div class="pinyin">{{Pinyin}}</div>
+    </div>
+    
+    <div class="translation-section">
+        <div class="translation-label">Meaning</div>
+        <div class="translation">{{English}}</div>
+    </div>
+    
+    <div class="audio-player">
+        {{Audio}}
+    </div>
+</div>

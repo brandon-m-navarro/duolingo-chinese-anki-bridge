@@ -1,0 +1,27 @@
+Card 4: Audio → Hanzi + Pinyin + English
+
+Front: [Sound]
+
+Back: 你好
+nǐ hǎo
+hello
+
+Front Template:
+<div class="card front-card">
+    <div class="prompt">Identify this word:</div>
+    <div class="audio-front">{{Audio}}</div>
+</div>
+
+Back Template:
+<div class="card audio-card">
+    <div class="audio-label">You heard:</div>
+    <div class="main-hanzi">{{Hanzi}}</div>
+    <div class="pinyin-section">
+        <div class="pinyin-label">Pronunciation</div>
+        <div class="pinyin">{{Pinyin}}</div>
+    </div>
+    <div class="translation-section">
+        <div class="translation-label">Meaning</div>
+        <div class="translation">{{English}}</div>
+    </div>
+</div>

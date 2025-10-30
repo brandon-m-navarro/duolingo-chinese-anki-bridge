@@ -1,0 +1,22 @@
+Card 3: English → Hanzi + Pinyin
+
+Front: hello
+
+Back: 你好
+nǐ hǎo
+
+Front Template:
+<div class="card front-card">
+    <div class="prompt">Write in Chinese:</div>
+    <div class="translation-front">{{English}}</div>
+</div>
+
+Back Template:
+<div class="card translation-card">
+    <div class="translation-question">{{English}}</div>
+    <div class="main-hanzi">{{Hanzi}}</div>
+    <div class="pinyin-section">
+        <div class="pinyin-label">Pronunciation</div>
+        <div class="pinyin">{{Pinyin}}</div>
+    </div>
+</div>
