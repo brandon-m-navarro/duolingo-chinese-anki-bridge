@@ -21,27 +21,27 @@ https://github.com/user-attachments/assets/73559ff2-09bb-4df2-b7f0-1651e5c81c08
 - Create folders by section: `Greetings/`, `Food/`, `Travel/`, `Lesson 1.1/`
 
 
-### Step 3: Generate Anki Flashcards
-```bash
-# Leaving out -s tag and running on /Downloads
-python tools/anki-flashcard-generator.py ~/Downloads
-
-# Group audio files as section
-python tools/anki-flashcard-generator.py path/to/audiofiles -s "Greetings"
-```
-Running either of these commands will create a CSV file for use in the next step.
-
+### Step 3: Generate CSV for Anki Flashcards
 If you want to organize your flashcards into decks, group the downloaded audio files into different folders and run the script on each one. Using the -s flag here will help carry that organization forward into the next steps.
 
 If you don't need your cards organized into specific sections, simply omit the flag. You can then run the script directly on your /Downloads folder, as it will only look for MP3 files following the hanzi-pinyin-english.mp3 naming convention.
 
+```bash
+# Example 1: Process all files in Downloads without organization
+python tools/anki-flashcard-generator.py ~/Downloads
 
-### Step 4:
-Using [Anki](https://apps.ankiweb.net/), a free-to-use flashcard app, you can import the created CSV (or CSVs if you organized with `-s`). BEFORE IMPORTING: You need to make sure Anki is expecting the 4 fields (Hanzi, Pinyin, Audio, English). This can be done easily by selecting 'ADD' on the UI -> Then clicking 'FIELDS'. Once there add the fields so it looks like this:
+# Example 2: Process files in a specific folder and tag them as "Greetings"
+python tools/anki-flashcard-generator.py path/to/audiofiles -s "Greetings"
+```
+
+### Step 4: Download Anki & Configure Fields
+Using [Anki](https://apps.ankiweb.net/), a free-to-use flashcard app, you can import the created CSV file (or multiple CSVs if you used the -s flag for organization).
+
+BEFORE IMPORTING: You need to make sure Anki is expecting the four fields (Hanzi, Pinyin, Audio, English). You can easily set this up by clicking the 'ADD' button on the main screen, then selecting your note type and clicking `Fields...`. Add the necessary fields so the configuration looks like this:
 
 <img width="752" height="532" alt="Screen Shot 2025-10-30 at 12 27 56 AM" src="https://github.com/user-attachments/assets/bf173dc3-e1e1-4d03-a95d-47b244be5d72" />
 
-### Step 5:
+### Step 5: Import CSV
 Now you are ready to import. From Anki, select "Import File" and find the CSV you created earlier. Make sure to double check the field seperator is 'Comma' and the box for 'Allow HTML' is checked.
 
 <img width="724" height="360" alt="Screen Shot 2025-10-30 at 12 29 15 AM" src="https://github.com/user-attachments/assets/cb31e1bf-bc9c-4299-be35-e774703f43a0" />
@@ -51,7 +51,7 @@ And make sure you Field Mappings are matching.
 <img width="723" height="274" alt="Screen Shot 2025-10-30 at 12 29 31 AM" src="https://github.com/user-attachments/assets/6b4e9aba-ecc9-49a4-95f5-fb52f31e025f" />
 
 
-### Step 6:
+### Step 6: Create Card Types
 Almost there! Since we have four fields, we can create four different card templates.
 
 To do this, go to Tools -> Manage Note Types in the toolbar. If you didn't change the name, your custom type was likely saved under a "Basic" profile. You can verify this by selecting it and clicking the Fields button. To avoid confusion, I recommend renaming it to something like 'Chinese'.
