@@ -25,12 +25,12 @@ https://github.com/user-attachments/assets/73559ff2-09bb-4df2-b7f0-1651e5c81c08
 python tools/anki-flashcard-generator.py path/to/audiofiles -s "Greetings"
 ```
 
-## Step 4:
+### Step 4:
 Using [Anki](https://apps.ankiweb.net/), a free-to-use flashcard app, you can import the created CSV (or CSVs if you organized with `-s`). BEFORE IMPORTING: You need to make sure Anki is expecting the 4 fields (Hanzi, Pinyin, Audio, English). This can be done easily by selecting 'ADD' on the UI -> Then clicking 'FIELDS'. Once there add the fields so it looks like this:
 
 <img width="752" height="532" alt="Screen Shot 2025-10-30 at 12 27 56 AM" src="https://github.com/user-attachments/assets/bf173dc3-e1e1-4d03-a95d-47b244be5d72" />
 
-## Step 5:
+### Step 5:
 Now you are ready to import. From Anki, select "Import File" and find the CSV you created earlier. Make sure to double check the field seperator is 'Comma' and the box for 'Allow HTML' is checked.
 
 <img width="724" height="360" alt="Screen Shot 2025-10-30 at 12 29 15 AM" src="https://github.com/user-attachments/assets/cb31e1bf-bc9c-4299-be35-e774703f43a0" />
@@ -39,7 +39,7 @@ And make sure you Field Mappings are matching.
 
 <img width="723" height="274" alt="Screen Shot 2025-10-30 at 12 29 31 AM" src="https://github.com/user-attachments/assets/6b4e9aba-ecc9-49a4-95f5-fb52f31e025f" />
 
-## Step 6:
+### Step 6:
 Almost there! Since we have four fields, we can create four different card templates.
 
 To do this, go to Tools -> Manage Note Types in the toolbar. If you didn't change the name, your custom type was likely saved under a "Basic" profile. You can verify this by selecting it and clicking the Fields button. To avoid confusion, I recommend renaming it to something like 'Chinese'.
