@@ -53,7 +53,7 @@ And make sure you Field Mappings are matching.
 
 
 ### Step 6: Create Card Types
-Almost there! Since we have four fields, we can create four different card templates.
+Almost there! Since we have four fields, we can create four different CardTypes.
 
 To do this, go to Tools -> Manage Note Types in the toolbar. If you didn't change the name, your custom type was likely saved under a "Basic" profile. You can verify this by selecting it and clicking the Fields button. To avoid confusion, I recommend renaming it to something like 'Chinese'.
 
