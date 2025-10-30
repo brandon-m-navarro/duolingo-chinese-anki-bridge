@@ -16,14 +16,25 @@
 
 https://github.com/user-attachments/assets/73559ff2-09bb-4df2-b7f0-1651e5c81c08
 
+
 ### Step 2: Organize Files (Optional)
 - Create folders by section: `Greetings/`, `Food/`, `Travel/`, `Lesson 1.1/`
 
+
 ### Step 3: Generate Anki Flashcards
 ```bash
-# For specific section
+# Leaving out -s tag and running on /Downloads
+python tools/anki-flashcard-generator.py ~/Downloads
+
+# Group audio files as section
 python tools/anki-flashcard-generator.py path/to/audiofiles -s "Greetings"
 ```
+Running either of these commands will create a CSV file for use in the next step.
+
+If you want to organize your flashcards into decks, group the downloaded audio files into different folders and run the script on each one. Using the -s flag here will help carry that organization forward into the next steps.
+
+If you don't need your cards organized into specific sections, simply omit the flag. You can then run the script directly on your /Downloads folder, as it will only look for MP3 files following the hanzi-pinyin-english.mp3 naming convention.
+
 
 ### Step 4:
 Using [Anki](https://apps.ankiweb.net/), a free-to-use flashcard app, you can import the created CSV (or CSVs if you organized with `-s`). BEFORE IMPORTING: You need to make sure Anki is expecting the 4 fields (Hanzi, Pinyin, Audio, English). This can be done easily by selecting 'ADD' on the UI -> Then clicking 'FIELDS'. Once there add the fields so it looks like this:
@@ -38,6 +49,7 @@ Now you are ready to import. From Anki, select "Import File" and find the CSV yo
 And make sure you Field Mappings are matching.
 
 <img width="723" height="274" alt="Screen Shot 2025-10-30 at 12 29 31 AM" src="https://github.com/user-attachments/assets/6b4e9aba-ecc9-49a4-95f5-fb52f31e025f" />
+
 
 ### Step 6:
 Almost there! Since we have four fields, we can create four different card templates.
