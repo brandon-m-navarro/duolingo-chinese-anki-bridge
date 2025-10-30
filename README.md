@@ -6,7 +6,7 @@
 ## Complete Workflow
 
 ### Step 0: Download the Tampermonkey Chrome Extension
-- In order to run userscripts, you need [Tampermonkey](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en). Tampermonkey allows you to run userscripts. Userscripts are small programs that modify page layouts, add or remove features, and automate actions. The userscript I wrote reverse-engineers the Duolingo DOM structure to extract vocabulary context, then uses free TTL APIs to create a new audio file of the selected Hanzi, which is then downloaded. This falls within Duolingo's TOS as it uses TTS instead of Duolingo's copyrighted audio.
+- In order to run userscripts, you need [Tampermonkey](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en). Userscripts are small programs that modify page layouts, add or remove features, and automate actions. The userscript I wrote reverse-engineers the Duolingo DOM structure to extract vocabulary context, then uses free TTL APIs to create a new audio file of the selected Hanzi, which is then downloaded. This falls within Duolingo's TOS as it uses TTS instead of Duolingo's copyrighted audio.
 
 ### Step 1: Generate Audio Files
 - Use the UserScript on Duolingo to capture vocabulary and download audio. If you have a Google Cloud API Key, you can enter it by selecting the `TTS Config` button. Don't worry if you don't have one, as there are a number of free fallbacks that can be used that produce high-quality audio files.
