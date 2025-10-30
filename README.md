@@ -2,6 +2,7 @@
 
 *Automatically capture Chinese vocabulary from Duolingo and create comprehensive Anki flashcards with native audio pronunciation.*
 
+Duolingo is a great learning tool but lacks a dedicated flashcard feature. I built this tool to help learners bridge that gap by making it easy to create flashcards from specific Hanzi characters.
 
 ## Complete Workflow
 
