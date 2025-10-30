@@ -57,9 +57,10 @@ Almost there! Since we have four fields, we can create four different card templ
 
 To do this, go to Tools -> Manage Note Types in the toolbar. If you didn't change the name, your custom type was likely saved under a "Basic" profile. You can verify this by selecting it and clicking the Fields button. To avoid confusion, I recommend renaming it to something like 'Chinese'.
 
-Once you've found your custom note type, highlight it and click Cards. This is where you'll define the card templates. Below are the templates I used:
+Once you've found your custom note type, highlight it and click Cards. This is where you'll define the Card Types. Card Types how you define what appears on the front and back of your cards, as well as style them using CSS.
+
+Below are the CardTypes I created, and that are included in /templates:
 ```
-Card Templates:
 Card 1: Hanzi → Pinyin + English + Audio
 
 Front: 你好
@@ -90,13 +91,9 @@ Back: 你好
 nǐ hǎo
 hello
 ```
-This is where you define what appears on the front and back of your cards, as well as style them using CSS.
-
-In the /templates section, you'll find the Styling area where you can paste the CSS, and the Front Template / Back Template areas for the HTML.
-
 Since we have four templates, you need to create a new Card Type for each one. You can do this easily by clicking the Options button near the top and selecting Add Card Type. The CSS is shared across all Card Types, so you only need to update the HTML for the Front Template and Back Template in each one.
 
-Here is the styling I used for Card 1: Hanzi → Pinyin + English + Audio:
+Here's what the UI looks like, as well as the HTML for CardType1 (Hanzi → Pinyin + English + Audio):
 
 FRONT:
 <img width="965" height="857" alt="Screen Shot 2025-10-30 at 12 45 42 AM" src="https://github.com/user-attachments/assets/7543e90b-342b-4a9e-8d6d-92cb01d795f0" />
