@@ -129,6 +129,12 @@ This folder is usually located in Library/Application Support/, but you can find
 duolingo-chinese-anki-bridge/
 ├── userscripts/
 │   └── audio-capture.user.js
+├── templates/
+│   └── CardType1.txt
+│   └── CardType2.txt
+│   └── CardType3.txt
+│   └── CardType4.txt
+│   └── styling.css
 ├── tools/
 │   └── flashcard-generator.py
 └── README.md
