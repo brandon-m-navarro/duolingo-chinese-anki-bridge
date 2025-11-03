@@ -40,7 +40,8 @@ Using [Anki](https://apps.ankiweb.net/), a free-to-use flashcard app, you can im
 
 BEFORE IMPORTING: You need to make sure Anki is expecting the four fields (Hanzi, Pinyin, Audio, English). You can easily set this up by clicking the 'ADD' button on the main screen, then selecting your note type and clicking `Fields...`. Add the necessary fields so the configuration looks like this:
 
-<img width="752" height="532" alt="Screen Shot 2025-10-30 at 12 27 56 AM" src="https://github.com/user-attachments/assets/bf173dc3-e1e1-4d03-a95d-47b244be5d72" />
+<img width="750" height="523" alt="Screen Shot 2025-11-03 at 2 48 17 PM" src="https://github.com/user-attachments/assets/66b5cf80-653d-4ee4-8107-f0c7139f1137" />
+
 
 ### Step 5: Import CSV
 Now you are ready to import. From Anki, select "Import File" and find the CSV you created earlier. Make sure to double check the field seperator is 'Comma' and the box for 'Allow HTML' is checked.
