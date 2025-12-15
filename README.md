@@ -2,6 +2,11 @@
 
 *Automatically capture Chinese vocabulary from Duolingo and create comprehensive Anki flashcards with native audio pronunciation.*
 
+## DEMO
+
+https://github.com/user-attachments/assets/5354b8b9-b500-4ce4-9004-7771c4e32403
+
+
 
 ## Complete Workflow
 
@@ -10,6 +15,8 @@
 
 ### Step 1: Generate Audio Files
 - Use the UserScript on Duolingo to capture vocabulary and download TTS equivalent audio. If you have a Google Cloud API Key, you can enter it by selecting the `TTS Config` button. Don't worry if you don't have one, as there are a number of free fallbacks that can be used that produce high-quality audio files.
+
+<img width="2606" height="1512" alt="image" src="https://github.com/user-attachments/assets/8d055809-c107-4d93-895b-e4f304ed69dd" />
 
 
 ### Step 2: Organize Files (Optional)
