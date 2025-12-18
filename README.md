@@ -1,6 +1,6 @@
 # Duolingo Chinese → Anki Bridge
 
-*Automatically capture Chinese vocabulary from Duolingo and create comprehensive Anki flashcards with native audio pronunciation.*
+*Automatically capture Chinese vocabulary from Duolingo and create Anki flashcards with English translation, Hanzi, Pinyin, audio.*
 
 ## DEMO
 
